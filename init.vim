@@ -42,4 +42,5 @@ nnoremap <leader>t :Neotree toggle<CR>
 nnoremap <leader>s :VimShell<CR>
 
 " Map fzf to Ctrl-p:
-nnoremap <C-p> :Files<CR>
+nnoremap <C-S-p> :Files<CR>
+nnoremap <C-p> :GitFiles<CR>
