@@ -74,16 +74,46 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["elixir.nvim"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/elixir.nvim",
+    url = "https://github.com/mhanberg/elixir.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["monochrome.nvim"] = {
     config = { "\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme monochrome\bcmd\bvim\0" },
     loaded = true,
     path = "/home/sweater/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
     url = "https://github.com/kdheepak/monochrome.nvim"
   },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/sweater/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/sweater/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   }
 }
 
