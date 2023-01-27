@@ -15,9 +15,11 @@ local packer_bootstrap = ensure_packer()
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use {'kdheepak/monochrome.nvim', config = function()
-    vim.cmd 'colorscheme monochrome'
-  end}
+  use 'rktjmp/lush.nvim'
+  use 'Lokaltog/monotone.nvim'
+
+  -- statusline
+  use 'feline-nvim/feline.nvim'
 
   use {"williamboman/mason.nvim"}
 
@@ -216,11 +218,17 @@ require('packer').startup(function(use)
   end
 end)
 
+vim.cmd [[set termguicolors]]
+
 require('mason').setup()
 require('elixir').setup()
 require('neo-tree').setup()
+require('feline').setup()
 
 -- Automatically format code on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
+
+-- Enable monotone 
+vim.cmd [[colorscheme monotone]]
 
 return
