@@ -17,7 +17,7 @@
 Perhaps, I should switch to alacritty, but I'm not sure how to use it without mouse.
 For instance, in `urxvt` I can just press `Ctrl+I` and it will open a browser window for URL #n...
 
-`wbthomason/packer.nvim` I only use this plugin manager to install the monochrome colourscheme.
+`wbthomason/packer.nvim` plugin manager for the plugins that have some heavy configuration like `NeoTree`.
 
 ## Architecture
 
