@@ -19,9 +19,22 @@ require('packer').startup(function(use)
 
     use 'rktjmp/lush.nvim'
     use 'Lokaltog/monotone.nvim'
+    use 'kdheepak/monochrome.nvim'
 
     -- statusline
     use 'feline-nvim/feline.nvim'
+
+    -- LuaSnip
+    use({
+        'L3MON4D3/LuaSnip',
+        config = function()
+            ls = require('luasnip')
+            ls.add_snippets("all", {})
+        end,
+        requires = {
+            'rafamadriz/friendly-snippets',
+        },
+    })
 
     -- LSP-ZERO!
     use {
@@ -258,8 +271,8 @@ require('feline').setup()
 -- Automatically format code on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
--- Enable monotone
-vim.cmd [[colorscheme monotone]]
+-- Enable monochrome
+vim.cmd [[colorscheme monochrome]]
 
 ---------------------------
 --    CONFIGURING LSP    --
