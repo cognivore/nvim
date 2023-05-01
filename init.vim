@@ -44,3 +44,6 @@ nnoremap <leader>s :VimShell<CR>
 " Map fzf to Ctrl-p:
 nnoremap <C-p> :GitFiles<CR>
 nnoremap <leader>p :Files<CR>
+
+" One sentence per line! Everywhere!
+set textwidth=9999
